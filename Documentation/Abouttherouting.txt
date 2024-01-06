@@ -1,0 +1,5 @@
+To make different pages the thing is simply go to app folder make the new folder of the page you want and add new page.js file into it which will have all the components and text to be rendered.this will be accessed throught localhost//3000.
+ In nested routing we simply add the new page folder in the previous page folder like if we want to have a blog page and want a new component newpost than we simply add a new folder in the post folder and under this folder a new page.js file
+ if we want to show some component on all pages of certain component like in previous example we can see that newpost is under post so we can use layout .js file in this way also.
+ in next js dat fetching are of three types namely 1.server side rendering 2.static site generation 3.Incremental static generation 
+ For good route handling in nextjs we need to build an api folder inside of which we have to create a folder and then create a file route.js which is also a special file

@@ -1,0 +1,4 @@
+/ there is two types of rendering in next which is client side and server side
+//this makes the rendering of website fast and efficient
+//for any react functions where we have to use hooks states i.e. any client side activity we have to make sure that we have written  'use client' at the top of the that file.
+//for knowing more about the usage of server and client side component go to docs 
