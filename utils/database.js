@@ -14,7 +14,7 @@ try{
         useNewUrlParser:true,
         useUnifiedTopology:true,
      })
-     isConnected=tue;
+     isConnected=true;
      console.log('MongoDB connected')
 }catch(error){
     console.log(error);
