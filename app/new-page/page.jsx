@@ -1,7 +1,6 @@
 import Feed from "@components/Feed"
 import Footer from "@components/Footer"
 import Nav from "@components/Nav"
-import Link from "next/link"
 const Home = () => {
   return (
     <div className="w-full">
@@ -14,10 +13,7 @@ const Home = () => {
   
   <p className="desc justify-center align-middle text-center">
     Welcome to Implemented Ideas a platform where you can share your work and creation be it website or something else. </p></h1>
-    <Link  href="/new-page"
-              className="main_btn mt-24 mb-48 hover:animate-pulse">
-                Enter the Platform
-              </Link> 
+    <Feed/>
     
 </section>
 

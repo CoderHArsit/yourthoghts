@@ -1,5 +1,6 @@
 import '@styles/globals.css';
 // import { Children } from 'react';
+import Head from 'next/head';
 import Nav from '@components/Nav';
 import Provider from '@components/Provider'
 import bg from "../public/assets/images/bg.jpg"
@@ -13,8 +14,11 @@ export const metadata={
 const RootLayout=({children})=>{
     return(
         <html lang='en'>
+           
             <body>
-                <Provider>            <div className='main'>
+                <Provider>           <Head>
+			<link rel='icon' href='/favicon.ico' />
+		</Head>  <div className='main'>
                 <div className='gradient' />
                 
             </div>
