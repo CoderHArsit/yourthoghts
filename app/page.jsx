@@ -1,16 +1,23 @@
 import Feed from "@components/Feed"
+import Footer from "@components/Footer"
+import Nav from "@components/Nav"
 const Home = () => {
   return (
+    <div className="w-full">
 <section className="w-full flex-center flex-col">
-  <h1 className="head_text text-center">
-    Discover and Share
+{/* <Nav/> */}
+  <h1 className="head_text text-center" style={{color:"#c22975"}}>
+    Share Your Unique 
     <br className="max-md:hidden"/>
-    <span className="orange_gradient text-center">AI powered promt</span>
+    <span className="orange_gradient text-center">Implemented Ideas</span>
   
-  <p className="desc text-center">
-    Promptopia is an open-source Ai prompting tool for moodern world to discover,create and share creative prompts </p></h1>
+  <p className="desc justify-center align-middle text-center">
+    Welcome to Implemented Ideas a platform where you can share your work and creation be it website or something else. </p></h1>
     <Feed/>
+    
 </section>
+
+</div>
   )
 }
 

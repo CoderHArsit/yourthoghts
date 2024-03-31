@@ -16,6 +16,7 @@ const EditPrompt = () => {
  const[post,setPost]=useState({
   prompt:"",
   tag:'',
+  link:''
  });
  useEffect(()=>{
 const getPromptDetails= async () =>{
@@ -25,6 +26,7 @@ const getPromptDetails= async () =>{
     setPost({
         prompt:data.prompt,
         tag:data.tag,
+        link:data.link,
     })
 }
 
@@ -42,6 +44,8 @@ if(promptId) getPromptDetails()
         prompt:post.prompt,
         // userId:session?.user.id,
         tag: post.tag
+        ,
+        link:post.link
       })
     })
     if(response.ok){

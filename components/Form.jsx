@@ -5,18 +5,18 @@ const Form = ({
 }) => {
   return (
     <section className='w-full max-w-full '>
-        <h1 className='head_text text-left'>
-            <span className='blue_gradient'>{type} Post</span>
+        <h1 className='head_text text-left' style={{color:"#c22975"}}>
+            <span className='head_text '>{type}d Idea </span>
         </h1>
         <p className='desc text-left max-w-md'>
-            {type} and share amazing prompts with the world and let your imagination run wild with any AI powered platform.
+            {type} and share amazing Implemented ideas which will help others to know that how much has the world built.
         </p>
         <form
         onSubmit={handleSubmit}
-        className='mt-10 w-full max-w-2xl flex flex-col gap-7 glassmorphism'>
+        className='mt-10 w-full max-w-2xl flex flex-col gap-7 prompt_card'>
             <label>
-                <span className='font-satoshi font-semibold text-base text-gray-700'>
-                    Your AI Prompt 
+                <span className='font-satoshi font-semibold text-base text-yellow-100'>
+                    Your Unique Idea
                 </span>
                 <textarea
                 value={post.prompt}
@@ -27,7 +27,7 @@ const Form = ({
                 ></textarea>
             </label>
             <label>
-                <span className='font-satoshi font-semibold text-base text-gray-700'>
+                <span className='font-satoshi font-semibold text-base text-yellow-100'>
                     Tag
                     <span className='font-normal'>(#product,#webdevelopment,#idea)</span>
                 </span>
@@ -35,6 +35,18 @@ const Form = ({
                 value={post.tag}
                 onChange={(e)=>setPost({ ...post,tag:e.target.value})}
                 placeholder='#tag'
+                required
+                className='form_input'
+                ></input>
+            </label>
+            <label>
+                <span className='font-satoshi font-semibold text-base text-yellow-100'>
+                    Link to your creation
+                </span>
+                <input
+                value={post.link}
+                onChange={(e)=>setPost({ ...post,link:e.target.value})}
+                placeholder='https//yourlink.com'
                 required
                 className='form_input'
                 ></input>
